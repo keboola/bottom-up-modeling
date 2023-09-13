@@ -610,3 +610,11 @@ with tab7:
 
             # Increment the key value for the next iteration
             key_value +="one"
+# Hide Made with streamlit from footer
+hide_streamlit_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
